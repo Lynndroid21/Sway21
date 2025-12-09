@@ -62,7 +62,7 @@ Clone this repo and run ./setup.sh and enjoy!
 
 # DISCLAIMER
 
-The sys-updater-mango21.sh script is now built for most distros! However, I'm new to linux and haven't tested any other package managers, so PLEASE leave an issue if the dependency install function is failing! This is an EVOLVING WIP, updates may happen rapidly during the beginning 6 months of this project!
+The sys-updater-sway21.sh script is now built for most distros! However, I'm new to linux and haven't tested any other package managers, so PLEASE leave an issue if the dependency install function is failing! This is an EVOLVING WIP, updates may happen rapidly during the beginning 6 months of this project!
 
 # Starchart & Other fun things!~
 
