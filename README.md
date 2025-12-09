@@ -8,7 +8,10 @@
 
 A Simple Dotfiles pack for SwayWM.
 
-
+<img width="2559" height="1439" alt="2025-12-08_20-50" src="https://github.com/user-attachments/assets/1252a174-3bbd-42f6-a5b7-13eebd7b88d4" />
+<img width="2559" height="1439" alt="2025-12-08_20-51" src="https://github.com/user-attachments/assets/5ef08056-8fcc-4332-8f6c-4c9f34f34cda" />
+<img width="2559" height="1439" alt="2025-12-08_20-52" src="https://github.com/user-attachments/assets/b542b63c-3478-4ecf-ba36-d37aa91574fe" />
+<img width="2559" height="1439" alt="2025-12-08_20-52_1" src="https://github.com/user-attachments/assets/2d8fbc4d-0361-40aa-a091-516df9a516d5" />
 
 # Installation
 
