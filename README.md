@@ -31,7 +31,7 @@ A Simple Dotfiles pack for SwayWM.
 * wl-clipboard
 * swaylock
 * swayidle
-* mako
+* swaync
 * fish
 * kitty
 * rofi
