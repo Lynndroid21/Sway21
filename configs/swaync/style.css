@@ -1,6 +1,6 @@
 :root {
-  --cc-bg: rgba(45, 31, 76, 0.7);
-  --noti-border-color: rgba(147, 128, 250, 0.7);
+  --cc-bg: rgba(45, 31, 76, 0.2);
+  --noti-border-color: rgba(147, 128, 250, 0.4);
   --noti-bg: 45, 31, 76;
   --noti-bg-alpha: 0.8;
   --noti-bg-darker: rgb(37, 29, 57);
@@ -321,7 +321,9 @@ notificationwindow, blankwindow, blankwindow {
   /* The Control Center which contains the old notifications + widgets */
   background: var(--cc-bg);
   color: var(--text-color);
+  border: var(--border);
   border-radius: var(--border-radius);
+  box-shadow: 0px 0px 3px 4px rgba(187, 164, 254, 0.2);
 }
 
 .control-center .control-center-list-placeholder {
@@ -405,7 +407,7 @@ notificationwindow, blankwindow, blankwindow {
   --mpris-album-art-overlay: rgba(0, 0, 0, 0.55);
   --mpris-button-hover: rgba(0, 0, 0, 0.5);
   --mpris-album-art-icon-size: 96px;
-  --mpris-album-art-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  --mpris-album-art-shadow: 0px 0px 3px 4px rgba(187, 164, 254, 0.2);
 }
 
 .widget-mpris {
@@ -417,6 +419,7 @@ notificationwindow, blankwindow, blankwindow {
   margin: 16px 20px;
   border-radius: var(--border-radius);
   box-shadow: var(--mpris-album-art-shadow);
+  border: var(--border);
 }
 
 .widget-mpris .widget-mpris-player .mpris-background {
@@ -436,6 +439,7 @@ notificationwindow, blankwindow, blankwindow {
 .widget-mpris .widget-mpris-player .mpris-overlay .widget-mpris-album-art {
   border-radius: var(--border-radius);
   box-shadow: var(--mpris-album-art-shadow);
+  border: var(--border);
   -gtk-icon-size: var(--mpris-album-art-icon-size);
 }
 
