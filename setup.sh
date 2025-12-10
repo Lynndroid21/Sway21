@@ -10,20 +10,20 @@ readonly PATH_TO_GIT_CLONE="$HOME/$DOTS_NAME"
 readonly PATH_TO_ROFI_THEMES="$HOME/.local/share/rofi/themes"
 
 # bash trap command
-trap S21exit INT
+# trap S21exit INT
 
 # bash clear screen command
-clear;
+# clear;
 
 # bash trap function is executed when CTRL-C is pressed:
-S21exit()
-{
-    command clear
-    echo "No worries hun! Have a good day!~"
-    sleep 4
-    command clear
-    command exit
-}
+# S21exit()
+# {
+#    command clear
+#    echo "No worries hun! Have a good day!~"
+#    sleep 4
+#    command clear
+#    command exit
+# }
 
 # Logging with gum fallback
 info() {
@@ -163,7 +163,7 @@ install_S21deps() {
     info "Your package manager is: $mgr"
 
     case $mgr in
-        pacman) yay -S brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle ;;
+        pacman) yay -S brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync ;;
         xbps) sudo xbps-install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync ;;
         dnf) sudo dnf install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync ;;
         zypper) sudo zypper install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync ;;
@@ -182,7 +182,8 @@ install_S21dots() {
     command cp -r -v -i $PATH_TO_GIT_CLONE/configs/cava $DOTS_INSTALL_DIR
     command cp -r -v -i $PATH_TO_GIT_CLONE/configs/fish $DOTS_INSTALL_DIR
     command cp -r -v -i $PATH_TO_GIT_CLONE/configs/kitty $DOTS_INSTALL_DIR
-    command cp -r -v -i $PATH_TO_GIT_CLONE/configs/mako $DOTS_INSTALL_DIR
+    command cp -r -v -i $PATH_TO_GIT_CLONE/configs/swaync $DOTS_INSTALL_DIR
+    command mkdir $DOTS_INSTALL_DIR/sway
     command cp -r -v -i $PATH_TO_GIT_CLONE/configs/sway $DOTS_INSTALL_DIR
     command cp -r -v -i $PATH_TO_GIT_CLONE/configs/swaync $DOTS_INSTALL_DIR
     command cp -r -v -i $PATH_TO_GIT_CLONE/configs/rofi $DOTS_INSTALL_DIR
@@ -246,7 +247,7 @@ ins_S21proc() {
                 info "You're all set, hun! Enjoy your new desktop!~"
                 sleep 4
                 command clear
-                echo exit
+                exit
                 fi
             else
             install_S21dots
