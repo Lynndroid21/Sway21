@@ -24,6 +24,7 @@
         "mpris",
         "custom/spacer5",
         // "cava",
+        "sway/mode",
         "custom/spacer1"
     ],
     "modules-center": [
@@ -55,6 +56,11 @@
         "custom/wall_eng",
         "custom/spacer"
     ],
+
+    "sway/mode": {
+        "format": " {}",
+        "max-length": 50
+    },
 
     "custom/jwilog": {
         "format": "<span color='#e3b872'> 󰣇 </span>",

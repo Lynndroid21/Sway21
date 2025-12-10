@@ -163,11 +163,11 @@ install_S21deps() {
     info "Your package manager is: $mgr"
 
     case $mgr in
-        pacman) yay -S brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock mako fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle ;;
-        xbps) sudo xbps-install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock mako fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle ;;
-        dnf) sudo dnf install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock mako fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle ;;
-        zypper) sudo zypper install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock mako fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle ;;
-        apt) sudo apt update && sudo apt install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock mako fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle ;;
+        pacman) yay -S brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle ;;
+        xbps) sudo xbps-install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync ;;
+        dnf) sudo dnf install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync ;;
+        zypper) sudo zypper install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync ;;
+        apt) sudo apt update && sudo apt install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync ;;
         *) error "Sorry hun, your package manager is unsupported.... T-T"; echo "" ; echo "Be sure to open depslist.txt and manually install the dependencies~" ;  return 1 ;;
     esac
     info "All the dependencies are now installed! Next step!~"
@@ -184,6 +184,7 @@ install_S21dots() {
     command cp -r -v -i $PATH_TO_GIT_CLONE/configs/kitty $DOTS_INSTALL_DIR
     command cp -r -v -i $PATH_TO_GIT_CLONE/configs/mako $DOTS_INSTALL_DIR
     command cp -r -v -i $PATH_TO_GIT_CLONE/configs/sway $DOTS_INSTALL_DIR
+    command cp -r -v -i $PATH_TO_GIT_CLONE/configs/swaync $DOTS_INSTALL_DIR
     command cp -r -v -i $PATH_TO_GIT_CLONE/configs/rofi $DOTS_INSTALL_DIR
     command cp -r -v -i $PATH_TO_GIT_CLONE/configs/wal $DOTS_INSTALL_DIR
     command cp -r -v -i $PATH_TO_GIT_CLONE/configs/waybar $DOTS_INSTALL_DIR

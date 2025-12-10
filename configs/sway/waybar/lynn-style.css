@@ -112,6 +112,7 @@ border: 2px solid @lovergirl;
 border-radius: 20px; */
 }
 
+#mode,
 #custom-btop,
 #dwl-window,
 #mpris,
@@ -127,6 +128,7 @@ color: @love;
 border: @love;
 }
 
+#mode,
 #idle_inhibitor,
 #custom-wall_eng {
 color: @grief;

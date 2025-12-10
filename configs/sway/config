@@ -157,6 +157,7 @@ exec --no-startup-id flameshot
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec wl-clip-persist --clipboard regular --reconnect-tries 0 &
 exec wl-paste --type text --watch cliphist store &
+exec swaync
 
 exec ~/.config/sway/autorun-scripts/load_waybar.sh
 
