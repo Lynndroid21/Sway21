@@ -25,7 +25,7 @@
 
     "modules-left": [
         "custom/spacer1",
-        "custom/session-saver",
+        "custom/swaync",
         "custom/spacer2"
     ],
     "modules-center": [
@@ -41,12 +41,25 @@
         "custom/spacer2"
     ],
 
-    "custom/session-saver": {
-        "format": "    ",
+    "custom/swaync": {
+        "format": "<span color='#e3b872' size='16pt'>{icon}</span>",
+        "format-icons": {
+            "notification": "󱅫",
+            "none": "󰂜",
+            "dnd-notification": "󰂠",
+            "dnd-none": "󰪓",
+            "inhibited-notification": "󰂛",
+            "inhibited-none": "󰪑",
+            "dnd-inhibited-notification": "󰂛",
+            "dnd-inhibited-none": "󰪑"
+    },
+
+    /* "custom/session-saver": {
+        "format": "     ",
         "tooltip": true,
         "tooltip-format": "btw ;)",
         "on-click": "~/.config/mango/msession.sh",
-    },
+    },*/
 
     "custom/todo": {
         "format": "  ",
@@ -68,7 +81,7 @@
     }, */
 
     "custom/vpn": {
-        "format": "<span color='#e3b872'></span>",
+        "format": "<span color='#ffffff'></span>",
         "exec": "warp-cli status",
         "on-click-left": "warp-cli connect",
         "on-click-right": "warp-cli disconnect",
