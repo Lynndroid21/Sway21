@@ -183,6 +183,9 @@ bindsym Super+minus scratchpad show
 
 # Autostart
 
+# Startup greeter (comment below to disable)
+exec kitty "~/.config/mango/autorun-scripts/greeter_sysc.sh"
+
 exec --no-startup-id waypaper --restore
 exec --no-startup-id flameshot
 
