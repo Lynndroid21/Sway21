@@ -163,11 +163,11 @@ install_S21deps() {
     info "Your package manager is: $mgr"
 
     case $mgr in
-        pacman) yay -S brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync syscgo ;;
-        xbps) sudo xbps-install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync ; curl -fsSL https://raw.githubusercontent.com/Nomadcxx/sysc-Go/master/install.sh | sudo bash ;;
-        dnf) sudo dnf install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync ; curl -fsSL https://raw.githubusercontent.com/Nomadcxx/sysc-Go/master/install.sh | sudo bash ;;
-        zypper) sudo zypper install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync ; curl -fsSL https://raw.githubusercontent.com/Nomadcxx/sysc-Go/master/install.sh | sudo bash ;;
-        apt) sudo apt update && sudo apt install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync ; curl -fsSL https://raw.githubusercontent.com/Nomadcxx/sysc-Go/master/install.sh | sudo bash ;;
+        pacman) yay -S brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync syscgo nmtui bluetui ;;
+        xbps) sudo xbps-install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync nmtui bluetui ; curl -fsSL https://raw.githubusercontent.com/Nomadcxx/sysc-Go/master/install.sh | sudo bash ;;
+        dnf) sudo dnf install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync nmtui bluetui ; curl -fsSL https://raw.githubusercontent.com/Nomadcxx/sysc-Go/master/install.sh | sudo bash ;;
+        zypper) sudo zypper install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync nmtui bluetui ; curl -fsSL https://raw.githubusercontent.com/Nomadcxx/sysc-Go/master/install.sh | sudo bash ;;
+        apt) sudo apt update && sudo apt install -y brightnessctl flameshot waybar waypaper swaybg pywal wl-paste wl-clipboard swaylock fish kitty rofi wlogout pipewire batsignal polkit-gnome starship swayidle swaync nmtui bluetui ; curl -fsSL https://raw.githubusercontent.com/Nomadcxx/sysc-Go/master/install.sh | sudo bash ;;
         *) error "Sorry hun, your package manager is unsupported.... T-T"; echo "" ; echo "Be sure to open depslist.txt and manually install the dependencies~" ;  return 1 ;;
     esac
     info "All the dependencies are now installed! Next step!~"
