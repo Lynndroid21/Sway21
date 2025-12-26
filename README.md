@@ -29,14 +29,14 @@ A Simple Dotfiles pack for SwayWM.
 * ChromiumPywal - pywalfox - wal_steam
 * wl-paste
 * wl-clipboard
-* swaylock
+* hyprlock
 * swayidle
 * swaync
 * fish
 * kitty
 * rofi
 * wlogout
-* pipewire
+* pipewire-pulse
 * batsignal
 * xcursor
 * polkit-gnome
