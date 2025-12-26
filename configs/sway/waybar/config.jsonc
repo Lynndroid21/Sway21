@@ -58,7 +58,7 @@
     ],
 
     "sway/mode": {
-        "format": " {}",
+        "format": "{}",
         "max-length": 50
     },
 
