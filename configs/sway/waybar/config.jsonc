@@ -79,10 +79,14 @@
     },
 
     "custom/sys_upd": {
-        "format": "<span color='#e3b872'> </span> Update~",
+        "format": "{}",
+        "interval": 10800,
         "tooltip": true,
-        "tooltip-format": "Update your system, Babe!~",
-        "on-click": "kitty ~/Sway21/sys-updater-sway21.sh",
+        "on-click": "kitty ~/.config/sway/sys-updater-sway21.sh",
+        "return-type": "json",
+        "exec": "~/.config/waybar/cust-bash-scripts/service-checks/arch21_updates.sh",
+        "exec-if": "exit 0",
+        "signal": 8
     },
 
     "custom/btop": {
