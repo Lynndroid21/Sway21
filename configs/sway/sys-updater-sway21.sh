@@ -138,6 +138,8 @@ echo ""
 
 DotsConf
 
+echo ""
+
 sleep 1
 
 S21_rb
